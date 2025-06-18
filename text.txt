@@ -1,0 +1,164 @@
+<html>
+    <body>
+    <style>
+    div{
+        background:linear-gradient(pink,blue);
+        width:80%;
+        height:90%;
+        margin-left:10%;
+        margin-top:13%;
+        border-radius:30px;
+        border:5px purple solid;
+    }
+    body {
+        background: linear-gradient(blue,pink);
+    }
+    .btn{
+        width:12%;
+        height:9%;
+        position:absolute;
+        font-size:50px;
+        border-radius:40px;
+        background-color:blue;
+        color:pink;
+        border:2px black solid;
+        text-align:center;
+    }
+    .btn:hover{
+        background-color:pink;
+        color:blue;
+    }
+    .screen{
+        width:70%;
+        position:absolute;
+        height:20%;
+        left:15%;
+        top:15%;
+        border-radius:20px;
+        background-color:hotpink;
+        font-size:90px;
+        color:black;
+    }
+    #bt1{
+        top:40%;
+        left:15%;
+    }
+    #bt2{
+        top:51%;
+        left:15%;
+    }
+      #bt3{
+        top:62%;
+        left:15%;
+    }
+      #bt4{
+        top:73%;
+        left:15%;
+    }
+      #bt5{
+        top:40%;
+        left:33%;
+    }
+      #bt6{
+        top:51%;
+        left:33%;
+    }
+      #bt7{
+        top:62%;
+        left:33%;
+    }
+      #bt8{
+        top:73%;
+        left:33%;
+    }
+      #bt10{
+        top:40%;
+        left:52%;
+    }
+      #bt11{
+        top:51%;
+        left:52%;
+    }
+      #bt12{
+        top:62%;
+        left:52%;
+    }
+      #bt13{
+        top:73%;
+        left:52%;
+    }
+      #bt14{
+        top:40%;
+        left:70%;
+    }
+      #bt15{
+        top:51%;
+        left:70%;
+    }
+      #bt16{
+        top:62%;
+        left:70%;
+    }
+      #bt17{
+        top:73%;
+        left:70%;
+    }
+    button{
+        width:27%;
+        height:9%;
+        background-color:pink;
+        color:blue;
+        position:absolute;
+        font-size:40px;
+        top:85%;
+        left:15%;
+        border-radius:40px;
+        border:2px red solid;
+    }
+    button:hover{
+        background-color:red;
+        color:blue;
+    }
+    .bt19{
+        left:55%;
+    }
+    
+    </style>
+        <div>
+        <form name="calc">
+        <input type="text" readonly name="screen" class="screen">
+         <input type="button" value="1" class="btn" id="bt1" onclick="calc.screen.value += '1'">
+              <input type="button" value="2" class="btn" id="bt2" onclick="calc.screen.value += '2'">
+                   <input type="button" value="3" class="btn" id="bt3" onclick="calc.screen.value += '3'">
+                        <input type="button" value="4" class="btn" id="bt4" onclick="calc.screen.value += '4'">
+            <input type="button" value="5" class="btn" id="bt5" onclick="calc.screen.value += '5'">
+                <input type="button" value="6" class="btn" id="bt6" onclick="calc.screen.value += '6'">
+                     <input type="button" value="7" class="btn" id="bt7" onclick="calc.screen.value += '7'">
+                          <input type="button" value="8" class="btn" id="bt8" onclick="calc.screen.value += '8'">
+                               <input type="button" value="9" class="btn" id="bt10" onclick="calc.screen.value += '9'">
+                                    <input type="button" value="+" class="btn" id="bt11" onclick="calc.screen.value += '+'">
+                                         <input type="button" value="-" class="btn" id="bt12" onclick="calc.screen.value += '-'">
+                                              <input type="button" value="0" class="btn" id="bt13" onclick="calc.screen.value += '0'">
+                                                   <input type="button" value="/" class="btn" id="bt14" onclick="calc.screen.value += ''/">
+                                                                                                    <input type="button" value="*" class="btn" id="bt15" onclick="calc.screen.value += ''*">
+                                              <input type="button" value="." class="btn" id="bt16" onclick="calc.screen.value += ''.">
+                                              <input type="button" value="=" class="btn" id="bt17" onclick="calculate() ">
+ <button class="bt18"  onclick="del()">AC</button>
+  <button class="bt19" onclick=    "del()" >Del</button>
+  </form>
+        </div>
+        <script>
+        function calculate(){
+            calc.screen.value = eval(calc.screen.value)
+        }
+        
+        function del(){
+            calc.screen.value=""
+        }
+        
+        function clear(){
+            calc.screen.value = calc.screen.value.slice(0,-1);
+        }
+        </script>
+    </body>
+</html>
